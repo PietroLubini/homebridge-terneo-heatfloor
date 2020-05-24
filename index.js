@@ -334,7 +334,7 @@ TerneoHeatfloor.prototype = {
                     lastState = state;
                 })
                 .catch((error) => {
-                    this.log.warn('[Terneo] [WARNING] State update error', error);
+                    this.log.warn(`[Terneo] [WARNING] State update error: ${error}`);
                 })
                 .finally(() => {
                     this.log.info('[Terneo] [DEBUG] Schedule new state update after ' + this.pollInterval + ' sec.');
